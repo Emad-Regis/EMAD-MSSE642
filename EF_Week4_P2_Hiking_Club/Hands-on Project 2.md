@@ -3,7 +3,7 @@
 **File Path:** `assignments/weekly-projects/project-2-threat-analysis.md`  
 **Version:** 3.6  
 **Date:** June 3, 2026  
-**Author/Group:** [Insert Group Names / GitHub Handles]
+**Author/Group:** [EMAD FATTAH / Group 2]
 
 ---
 
