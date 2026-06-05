@@ -1,7 +1,6 @@
 # HANDS-ON PROJECT #2: Vulnerability Analysis and Threat Model (Hiking Club)
 
-**File Path:** `assignments/weekly-projects/project-2-threat-analysis.md`  
-**Version:** 3.6  
+**File Path:** `assignments/weekly-projects/project-2-threat-analysis.md`   
 **Date:** June 3, 2026  
 **Author/Group:** [EMAD FATTAH / Group 2]
 
