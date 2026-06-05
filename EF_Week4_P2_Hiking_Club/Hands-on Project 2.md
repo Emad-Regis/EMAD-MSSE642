@@ -40,8 +40,6 @@ Based on the project description, several key areas require strict security cont
 
 Below is the architectural diagram showing the systems, networks, trust boundaries, IP addresses, and data flows.
 
-![Hands On Project 2](EF_Week4_P2_Hiking_Club/Image/image_b41361e3.png)
-
 ```text
 +---------------------------------------------------------------------------------------------------------+
 |                                           UNTRUSTED ZONE (Internet)                                     |
@@ -172,3 +170,10 @@ The following risks are prioritized using a standard Risk Matrix (Likelihood x I
 | **4** | **Privilege Escalation from Member to Trip Leader/Admin** | Medium | High | **High** | Remove role-assignment capabilities from general profile update endpoints; secure administrative endpoints. |
 | **5** | **Stored XSS via Event Descriptions** | Medium | Medium | **Medium** | Apply strict input sanitization and context-aware output encoding on all user-submitted text. |
 | **6** | **Denial of Service preventing Trip Registrations** | Medium | Low | **Low** | Implement rate-limiting, CAPTCHA, and deploy an Application Web Application Firewall (WAF). |
+
+## Practical Assumptions Used in This Model
+- The application is a traditional web app with a relational database.
+- All clients access the platform through modern web browsers.
+- Payment card processing is outsourced to a trusted third-party gateway.
+- The club uses cloud-managed infrastructure and can configure firewalls, IAM, and logging.
+- Regulatory/privacy obligations apply to medical and payment-adjacent data.
