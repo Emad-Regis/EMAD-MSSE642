@@ -38,6 +38,7 @@ Based on the project description, several key areas require strict security cont
 ## Deliverable Part 2A: Architectural Diagram
 
 Below is the architectural diagram showing the systems, networks, trust boundaries, IP addresses, and data flows.
+
 ![snap_shot](EF_Week4_P2_Hiking_Club/Image/image_a56a5a82.png)
 
 ```text
