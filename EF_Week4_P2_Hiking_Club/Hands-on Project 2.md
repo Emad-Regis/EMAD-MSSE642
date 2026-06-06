@@ -41,60 +41,6 @@ Below is the architectural diagram showing the systems, networks, trust boundari
 
 ![snap_shot](/EF_Week4_P2_Hiking_Club/Image/image_a56a5a82.png)
 
-```text
-+---------------------------------------------------------------------------------------------------------+
-|                                           UNTRUSTED ZONE (Internet)                                     |
-|                                                                                                         |
-|   +-----------------------+          +-----------------------+          +-----------------------+       |
-|   |     Guest Client      |          |     Member Client     |          |     Admin Client      |       |
-|   |   (Web Browser/HTML)  |          |   (Web Browser/HTML)  |          |   (Web Browser/HTML)  |       |
-|   +-----------+-----------+          +-----------+-----------+          +-----------+-----------+       |
-|               |                                  |                                  |                   |
-|               | HTTPS (Port 443)                 | HTTPS (Port 443)                 | HTTPS (Port 443)  |
-|               v                                  v                                  v                   |
-+---------------+----------------------------------+----------------------------------+-------------------+
-===========================================================================================================
-                                     TRUST BOUNDARY 1: External Firewall (WAF/ALB)
-===========================================================================================================
-+---------------------------------------------------------------------------------------------------------+
-| AWS VPC (10.0.0.0/16)                                                                                   |
-|                                                                                                         |
-|  +---------------------------------------------------------------------------------------------------+  |
-|  | PUBLIC SUBNET (DMZ) - 10.0.1.0/24                                                                 |  |
-|  |                                                                                                   |  |
-|  |   +-------------------------------------------------------------------------------------------+   |  |
-|  |   | FRONT END WEB SERVER                                                                      |   |  |
-|  |   | Public IP: 203.0.113.10  |  Private IP: 10.0.1.15                                         |   |  |
-|  |   |                                                                                           |   |  |
-|  |   |   - Guest Browsing Router      - Member Profile Router      - Admin/Trip Leader Router    |   |  |
-|  |   |   - Auth Controller (Bcrypt)   - Event Registration API     - Treasury & Payment Portal   |   |  |
-|  |   +---------------------------------------------+---------------------------------------------+   |  |
-|  |                                                 |                                                 |  |
-|  +-------------------------------------------------|-------------------------------------------------+  |
-|                                                    | SQL/TCP (Port 5432)                                |
-|                                                    | (Only allowed from 10.0.1.15)                      |
-|                                                    v                                                    |
-|  =====================================================================================================  |
-|                                  TRUST BOUNDARY 2: Internal DB Security Group                           |
-|  =====================================================================================================  |
-|  +-------------------------------------------------------------------------------------------------+  |
-|  | PRIVATE SUBNET - 10.0.2.0/24                                                                      |  |
-|  |                                                                                                   |  |
-|  |   +-------------------------------------------------------------------------------------------+   |  |
-|  |   | BACKEND DATABASE SERVER (PostgreSQL)                                                      |   |  |
-|  |   | Private IP: 10.0.2.24 (No Public IP)                                                      |   |  |
-|  |   |                                                                                           |   |  |
-|  |   |   - Users Table (Hashed Passwords, Profile Data)                                          |   |  |
-|  |   |   - Events Table (Trip Details, Max/Min limits)                                           |   |  |
-|  |   |   - Registrations Table (Waitlists, Attendee Statuses)                                    |   |  |
-|  |   |   - Private Notes & Medical Info Table (Encrypted At Rest)                                |   |  |
-|  |   |   - Treasury & Transaction Ledger                                                         |   |  |
-|  |   +-------------------------------------------------------------------------------------------+   |  |
-|  |                                                                                                   |  |
-|  +-------------------------------------------------------------------------------------------------+  |
-+---------------------------------------------------------------------------------------------------------+
-```
-
 ### Data Flow Descriptions:
 1.  **Guest / Member / Admin to Front End Web Server (HTTPS - Port 443):** Users send HTTPS requests to the Front End Web Server. This includes viewing trips (guests), updating profiles and registering (members), or managing events and treasury data (admins/leaders).
 2.  **Front End Web Server to Backend Database Server (SQL/TCP - Port 5432):** The Front End Web Server processes business logic, validates inputs, checks user roles, and executes parameterized SQL queries against the Database Server located securely in the Private Subnet.
