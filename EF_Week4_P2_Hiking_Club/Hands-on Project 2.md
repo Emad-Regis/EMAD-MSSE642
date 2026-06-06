@@ -39,7 +39,7 @@ Based on the project description, several key areas require strict security cont
 
 Below is the architectural diagram showing the systems, networks, trust boundaries, IP addresses, and data flows.
 
-![snap_shot](EF_Week4_P2_Hiking_Club/image1.png)
+![snap_shot](/EF_Week4_P2_Hiking_Club/image1.png)
 
 ```text
 +---------------------------------------------------------------------------------------------------------+
