@@ -1,8 +1,108 @@
 # SQL Injection Attack Reference
 ### OWASP A05:2025 — Injection | Security Vulnerability Lab
 
-### OVERVIEW 
-A05:2025 – Injection is the fifth category in the OWASP Top (10:2025) list of critical web application security risks, having dropped two spots from its previous #3 position. This vulnerability family occurs when an application receives untrusted, user-supplied data and directly passes it to an interpreter as part of a command or query without proper validation or sanitization. Attackers exploit this flaw by crafting malicious input that tricks the interpreter into executing unintended hostile commands or accessing unauthorized data. It is one of the most heavily tested and prevalent risk classes, spanning 38 mapped software weaknesses that include classic vulnerabilities like SQL injection and Cross-Site Scripting (XSS), alongside modern variants like AI prompt injection.
+---
+
+## Introduction
+
+### What Is SQL Injection?
+
+SQL Injection (SQLi) is one of the oldest, most well-known, and most dangerous vulnerabilities in web application security. It has appeared in the **OWASP Top 10** list of critical security risks for over two decades and remains ranked **#5 in the 2025 edition** — not because defenders don't know about it, but because it continues to be found in real systems every day.
+
+At its core, SQL injection happens when an application builds a database query by **directly concatenating user input into a SQL string** without separating the data from the SQL code. This blurs the boundary between *instructions* and *data* — allowing an attacker to submit input that is interpreted as SQL commands rather than as a search term or value.
+
+```sql
+-- What the developer intended:
+SELECT * FROM products WHERE name ILIKE '%laptop%'
+
+-- What the attacker sends instead:
+SELECT * FROM products WHERE name ILIKE '%' OR '1'='1%'
+```
+
+The database cannot tell the difference. It executes whatever it receives.
+
+---
+
+### Why It Still Happens
+
+Despite being widely understood, SQL injection persists for several reasons:
+
+- **Legacy codebases** — older applications built before parameterized queries became standard practice.
+- **Developer oversight** — a single unparameterized query in a large codebase is enough to create a critical vulnerability.
+- **Rapid development pressure** — shortcuts taken under deadline pressure that never get fixed.
+- **Third-party components** — plugins, libraries, or CMS extensions that introduce vulnerabilities outside the developer's direct control.
+- **No visible error** — a vulnerable query often works perfectly for normal users, so it goes undetected until an attacker finds it.
+
+---
+
+### What an Attacker Can Do
+
+Depending on the database configuration and query structure, a successful SQL injection attack can allow an attacker to:
+
+| Capability | Example |
+|---|---|
+| **Bypass authentication** | Log in as any user without a password |
+| **Read sensitive data** | Extract usernames, emails, and password hashes |
+| **Read hidden columns** | Access fields the application never displays |
+| **Query other tables** | Steal data from tables unrelated to the original query |
+| **Infer data blindly** | Extract secrets character-by-character using timing |
+| **Destroy data** | Drop tables, delete records, wipe entire databases |
+| **Escalate privileges** | Identify admin accounts and target them specifically |
+
+All of these are possible through a single vulnerable input field — a search box, a login form, a URL parameter, even an HTTP header.
+
+---
+
+### The Scale of Real-World Impact
+
+SQL injection has been responsible for some of the largest data breaches in history:
+
+- **Heartland Payment Systems (2008)** — 130 million credit card numbers stolen via SQL injection.
+- **Sony Pictures (2011)** — over 1 million user accounts compromised.
+- **Yahoo! (2012)** — 450,000 credentials exposed through a single SQLi vulnerability.
+- **TalkTalk (2015)** — 157,000 customer records stolen; the attacker was 17 years old.
+
+These were not sophisticated nation-state attacks. They were opportunistic exploits of a well-known, preventable flaw.
+
+---
+
+### The Defence — Parameterized Queries
+
+The primary defence against SQL injection is **parameterized queries** (also called prepared statements). Instead of building a SQL string by concatenation, the query structure is defined first and the user's data is passed separately:
+
+```sql
+-- Vulnerable: data mixed with SQL structure
+"SELECT * FROM products WHERE name ILIKE '%" + userInput + "%'"
+
+-- Secure: structure and data are always separate
+"SELECT * FROM products WHERE name ILIKE $1"
+-- with parameter: ["%" + userInput + "%"]
+```
+
+The database receives the SQL structure and the data through different channels. No matter what the user types — quotes, semicolons, SQL keywords — it is always treated as a literal value. It can never be interpreted as code.
+
+Supporting defences include:
+
+- **Input validation** — reject or flag inputs containing SQL metacharacters (`'`, `;`, `--`)
+- **Least-privilege database accounts** — the app's DB user should only have the permissions it actually needs (e.g. `SELECT` only — never `DROP`)
+- **Web Application Firewalls (WAF)** — detect and block common injection patterns at the network level
+- **Security logging (A09:2025)** — record every query attempt so attacks are detected even when they fail
+- **Error handling** — never expose raw database error messages to users; they leak system internals
+
+---
+
+### How This Lab Is Structured
+
+This lab demonstrates SQL injection hands-on through **six attack types**, each targeting a different technique an attacker might use. Every attack is run against two endpoints side by side:
+
+- **Vulnerable Endpoint** — builds queries with string concatenation. No logging. Attacks succeed silently.
+- **Secure Endpoint** — uses parameterized queries. Every attempt is logged and classified by severity.
+
+The contrast between the two is the lesson: the same input, two different outcomes, one line of code difference.
+
+Work through each attack in order. Try the payload in the Vulnerable search box first — observe what comes back. Then try the same payload in the Secure search box and watch it get blocked and logged.
+
+---
 
 ## Attack 1 — Boolean-Based Bypass
 
@@ -255,3 +355,6 @@ SQL injection without backups and without least-privilege accounts isn't just a 
 | 6 | Stacked DDL | `'; DROP TABLE products--` | Destroys the table permanently |
 
 **The single defense that stops all six:** parameterized queries (prepared statements).
+
+
+
