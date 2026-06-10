@@ -2,7 +2,7 @@
 ### OWASP A05:2025 — Injection | Security Vulnerability Lab
 
 ### OVERVIEW 
-A05:2025 – Injection is the fifth category in the OWASP Top 10:2025 list of critical web application security risks, having dropped two spots from its previous #3 position. This vulnerability family occurs when an application receives untrusted, user-supplied data and directly passes it to an interpreter as part of a command or query without proper validation or sanitization. Attackers exploit this flaw by crafting malicious input that tricks the interpreter into executing unintended hostile commands or accessing unauthorized data. It is one of the most heavily tested and prevalent risk classes, spanning 38 mapped software weaknesses that include classic vulnerabilities like SQL injection and Cross-Site Scripting (XSS), alongside modern variants like AI prompt injection.---
+A05:2025 – Injection is the fifth category in the OWASP Top (10:2025) list of critical web application security risks, having dropped two spots from its previous #3 position. This vulnerability family occurs when an application receives untrusted, user-supplied data and directly passes it to an interpreter as part of a command or query without proper validation or sanitization. Attackers exploit this flaw by crafting malicious input that tricks the interpreter into executing unintended hostile commands or accessing unauthorized data. It is one of the most heavily tested and prevalent risk classes, spanning 38 mapped software weaknesses that include classic vulnerabilities like SQL injection and Cross-Site Scripting (XSS), alongside modern variants like AI prompt injection.
 
 ## Attack 1 — Boolean-Based Bypass
 
