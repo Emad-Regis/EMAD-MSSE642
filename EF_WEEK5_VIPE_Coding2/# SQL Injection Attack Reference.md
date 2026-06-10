@@ -1,7 +1,7 @@
 # SQL Injection Attack Reference
 ### OWASP A05:2025 — Injection | Security Vulnerability Lab
 
-**Course:*** MSSE 642 – Software Assurance  
+***Course:*** MSSE 642 – Software Assurance  
 **Project:*** OWASP Vulnerability — A05:2025 Injection Week 5 Vipe Coding 2  
 **Student:*** EMAD FATTAH  
 **Date:*** June 11, 2026
