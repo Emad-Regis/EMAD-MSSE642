@@ -57,12 +57,38 @@ All of these are possible through a single vulnerable input field — a search b
 
 SQL injection has been responsible for some of the largest data breaches in history:
 
-- **Heartland Payment Systems (2008)** — 130 million credit card numbers stolen via SQL injection.
-- **Sony Pictures (2011)** — over 1 million user accounts compromised.
-- **Yahoo! (2012)** — 450,000 credentials exposed through a single SQLi vulnerability.
-- **TalkTalk (2015)** — 157,000 customer records stolen; the attacker was 17 years old.
+- **Heartland Payment Systems (2008)** — 130 million credit card numbers stolen via SQL injection. The attacker, Albert Gonzalez, was sentenced to 20 years in federal prison. ¹
+- **Sony Pictures (2011)** — over 1 million user accounts compromised, including plaintext passwords, email addresses, and dates of birth, extracted through a single SQL injection flaw. ²
+- **Yahoo! (2012)** — 450,000 credentials exposed through a SQLi vulnerability in Yahoo! Voices. Passwords were stored unsalted in plaintext. ³
+- **TalkTalk (2015)** — 157,000 customer records and 15,600 bank account numbers stolen. The attacker was 17 years old, using publicly documented SQL injection tools. The breach cost TalkTalk £77 million. ⁴
 
 These were not sophisticated nation-state attacks. They were opportunistic exploits of a well-known, preventable flaw.
+
+---
+
+#### References
+
+¹ Zetter, K. (2010, March 26). *TJX Hacker Gets 20 Years in Prison.* Wired.
+https://www.wired.com/2010/03/gonzalez-sentencing
+
+² Poulsen, K. (2011, June 2). *Sony Pictures Hacked, Exposing 1 Million Accounts.* Wired.
+https://www.wired.com/2011/06/sony-pictures-hacked
+
+³ Gallagher, S. (2012, July 12). *Yahoo data breach: 450,000 credentials leaked.* Ars Technica.
+https://arstechnica.com/information-technology/2012/07/yahoo-data-breach-450000-credentials-leaked
+
+⁴ Information Commissioner's Office. (2016, October 5). *TalkTalk Telecom Group PLC — Monetary Penalty Notice.* ICO.
+https://ico.org.uk/action-weve-taken/enforcement/talktalk-telecom-group-plc
+
+---
+
+**Further Reading**
+
+- OWASP — SQL Injection: https://owasp.org/www-community/attacks/SQL_Injection
+- OWASP Top 10:2025 — A05 Injection: https://owasp.org/Top10/A03_2021-Injection
+- CWE-89 — SQL Injection: https://cwe.mitre.org/data/definitions/89.html
+- NIST NVD — SQL Injection vulnerability database: https://nvd.nist.gov/vuln/search/results?query=sql+injection
+- PortSwigger Web Security Academy — SQL Injection: https://portswigger.net/web-security/sql-injection
 
 ---
 
@@ -355,6 +381,3 @@ SQL injection without backups and without least-privilege accounts isn't just a 
 | 6 | Stacked DDL | `'; DROP TABLE products--` | Destroys the table permanently |
 
 **The single defense that stops all six:** parameterized queries (prepared statements).
-
-
-
