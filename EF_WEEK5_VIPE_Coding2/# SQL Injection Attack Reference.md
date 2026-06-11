@@ -206,6 +206,9 @@ WHERE name ILIKE '%x' UNION SELECT id, username, email, password_hash, role FROM
 ### Key lesson
 A normal search box can become a full database dump tool if queries are built by string concatenation. Parameterized queries mean the UNION is never executed — `$1` receives the entire payload as a literal string.
 
+![SQL Injection Lab — Landing Page](/EF_WEEK5_VIPE_Coding2/VIPE_Coding2_Images/Attack2.png)
+*Landing page showing the attacking 2 (UNION Data Extraction)*
+
 ---
 
 ## Attack 3 — Comment-Based Tautology
