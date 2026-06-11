@@ -130,6 +130,7 @@ Work through each attack in order. Try the payload in the Vulnerable search box 
 
 ![SQL Injection Lab — Landing Page]()
 *Landing page showing the two-panel layout (vulnerable vs. secure endpoint)*
+
 ---
 
 ## Attack 1 — Boolean-Based Bypass
