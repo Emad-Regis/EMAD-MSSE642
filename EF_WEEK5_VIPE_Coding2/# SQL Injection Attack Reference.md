@@ -385,6 +385,9 @@ Even with parameterized queries, the right answer is to layer multiple defenses:
 ### Key lesson
 SQL injection without backups and without least-privilege accounts isn't just a data theft risk — it's an **existential risk** to the application. A single unsanitized input can permanently destroy everything.
 
+![SQL Injection Lab — Landing Page](/EF_WEEK5_VIPE_Coding2/VIPE_Coding2_Images/Attack6.png)
+*Landing page showing the attacking 6 (Stacked DLL)*
+
 ---
 
 ## Summary
