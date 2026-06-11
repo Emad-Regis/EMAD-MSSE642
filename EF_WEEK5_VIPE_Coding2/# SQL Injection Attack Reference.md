@@ -244,6 +244,9 @@ The `--` comment is what makes this technique effective in the real world — th
 ### Key lesson
 `--` is the attacker's cleanup tool. It lets them inject new SQL logic while silently discarding whatever was left of the original query, keeping the final statement syntactically valid.
 
+![SQL Injection Lab — Landing Page](/EF_WEEK5_VIPE_Coding2/VIPE_Coding2_Images/Attack3.png)
+*Landing page showing the attacking 3 (Comment-Based Tautology)*
+
 ---
 
 ## Attack 4 — Time-Based Blind Injection
