@@ -285,6 +285,9 @@ Repeat for every character, every column, every table. Automated tools like **sq
 ### Key lesson
 A site that shows **no output at all** is not safe from SQL injection. As long as the query is vulnerable, response *time* leaks information — and that's all an automated tool needs to reconstruct every secret in your database, one millisecond at a time.
 
+![SQL Injection Lab — Landing Page](/EF_WEEK5_VIPE_Coding2/VIPE_Coding2_Images/Attack4.png)
+*Landing page showing the attacking 4 (Time-Based Blind Injection)*
+
 ---
 
 ## Attack 5 — Error-Based Extraction
