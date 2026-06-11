@@ -169,6 +169,9 @@ PostgreSQL receives the single quote as *data to search for*, not SQL syntax. It
 ### Key lesson
 The vulnerability isn't the search box — it's **trusting user input as code**. Parameterized queries enforce a hard boundary: SQL structure goes one way, data goes another, and they can never mix.
 
+![SQL Injection Lab — Landing Page] (/EF_WEEK5_VIPE_Coding2/VIPE_Coding2_Images/Attack1.png)
+*Landing page showing the attacking 1 (Boolean-Based Bypass)*
+
 ---
 
 ## Attack 2 — UNION Data Extraction
