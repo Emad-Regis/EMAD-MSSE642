@@ -74,14 +74,11 @@ These were not sophisticated nation-state attacks. They were opportunistic explo
 
 ¹ U.S. Department of Justice. (2009, August 17). Alleged international hacker indicted in massive attack on U.S. retail and banking networks [Press release]. https://www.justice.gov/archives/opa/pr/alleged-international-hacker-indicted-massive-attack-us-retail-and-banking-networks
 
-² Poulsen, K. (2011, June 2). *Sony Pictures Hacked, Exposing 1 Million Accounts.* Wired.
-https://www.wired.com/2011/06/sony-pictures-hacked
+² BBC News. (2011, June 3). Sony investigating another hack. https://www.bbc.com/news/business-13636704
 
-³ Gallagher, S. (2012, July 12). *Yahoo data breach: 450,000 credentials leaked.* Ars Technica.
-https://arstechnica.com/information-technology/2012/07/yahoo-data-breach-450000-credentials-leaked
+³ Zetter, K. (2012, July 12). Report: Half a million Yahoo user accounts exposed in breach. Wired. https://www.wired.com/2012/07/yahoo-breach/
 
-⁴ Information Commissioner's Office. (2016, October 5). *TalkTalk Telecom Group PLC — Monetary Penalty Notice.* ICO.
-https://ico.org.uk/action-weve-taken/enforcement/talktalk-telecom-group-plc
+⁴ Information Commissioner's Office. (2016, October 5). *TalkTalk Telecom Group PLC — Monetary Penalty Notice.* ICO. https://ico.org.uk/about-the-ico/media-centre/talktalk-cyber-attack-how-the-ico-investigation-unfolded/
 
 ---
 
