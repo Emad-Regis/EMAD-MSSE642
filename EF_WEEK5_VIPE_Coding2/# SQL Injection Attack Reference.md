@@ -128,7 +128,7 @@ The contrast between the two is the lesson: the same input, two different outcom
 
 Work through each attack in order. Try the payload in the Vulnerable search box first — observe what comes back. Then try the same payload in the Secure search box and watch it get blocked and logged.
 
-![SQL Injection Lab — Landing Page]()
+![SQL Injection Lab — Landing Page](/EF_WEEK5_VIPE_Coding2/VIPE_Coding2_Images/SQL.png)
 *Landing page showing the two-panel layout (vulnerable vs. secure endpoint)*
 
 ---
