@@ -3,7 +3,8 @@
 
 *Course*: MSSE 642 – Software Assurance  
 *Student*: EMAD FATTAH  
-*Date:* June 11, 2026
+*Date: June , 2026
+
 ---
 
 ## Introduction
