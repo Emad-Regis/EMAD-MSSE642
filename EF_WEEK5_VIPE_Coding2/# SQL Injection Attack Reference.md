@@ -334,7 +334,7 @@ Remove either condition and the attack fails.
 ### Key lesson
 **Never show raw database error messages to users.** Even a "harmless" error can hand an attacker your database version, OS details, and the contents of your tables. Production apps must use generic error pages, with real errors written only to internal logs.
 
-![SQL Injection Lab — Landing Page]/EF_WEEK5_VIPE_Coding2/VIPE_Coding2_Images/Attack5.png)
+![SQL Injection Lab — Landing Page](/EF_WEEK5_VIPE_Coding2/VIPE_Coding2_Images/Attack5.png)
 *Landing page showing the attacking 5 (Error-Based Extraction)*
 
 ---
