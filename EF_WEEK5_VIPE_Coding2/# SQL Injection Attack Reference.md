@@ -72,8 +72,7 @@ These were not sophisticated nation-state attacks. They were opportunistic explo
 
 #### References
 
-¹ Zetter, K. (2010, March 26). *TJX Hacker Gets 20 Years in Prison.* Wired.
-https://www.wired.com/2010/03/gonzalez-sentencing
+¹ U.S. Department of Justice. (2009, August 17). Alleged international hacker indicted in massive attack on U.S. retail and banking networks [Press release]. https://www.justice.gov/archives/opa/pr/alleged-international-hacker-indicted-massive-attack-us-retail-and-banking-networks
 
 ² Poulsen, K. (2011, June 2). *Sony Pictures Hacked, Exposing 1 Million Accounts.* Wired.
 https://www.wired.com/2011/06/sony-pictures-hacked
