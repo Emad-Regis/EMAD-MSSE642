@@ -196,6 +196,12 @@ The scan generated a detailed list of vulnerabilities across critical, high, med
 
 This highlights the value of a vulnerability scanner over a port scanner. While Metasploit simply found open ports, Tenable Nessus matched them with exact vulnerabilities, risk severity ratings, CVE references, and instructions to fix them. Nessus turned a list of open ports into a clear guide for security improvement.
 
+![snapshot_6](/EF_Week6_P3_Pen_Test_Lab/P6_Images/Screenshot6.png)
+Pic.6 (Scan Completion of Metasploitable2 via Nessus installed in Kali Linux) 
+
+![snapshot_7](/EF_Week6_P3_Pen_Test_Lab/P6_Images/Screenshot7.png)
+Pic.7 (Example of Nessus can give a brief description of first Vulenrability)
+
 ### 8. Conclusion
 Nessus is one of the most influential and widely used vulnerability-assessment tools in the cybersecurity industry. As described in *Learn Kali Linux 2019* by Glen D. Singh, Nessus plays a central role in the scanning and auditing phases of penetration testing, bridging the gap between reconnaissance and exploitation. Its extensive plugin library, customizable scan templates, and detailed reporting capabilities make it an essential tool for identifying and prioritizing security weaknesses.
 
