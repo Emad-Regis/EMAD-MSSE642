@@ -55,7 +55,8 @@ Port scanning was performed using the Metasploit Framework's built-in TCP port s
 ![Snapshot_2](/EF_Week6_P3_Pen_Test_Lab/P6_Images/Screenshot2.png)
 Pic.2 (Metasploit console running)
 
-![Snapshot-3: Port Scanner Modules (search portscan)](image)
+![Snapshot_3](/EF_Week6_P3_Pen_Test_Lab/P6_Images/Screenshot3.png)
+Pic.3 (Port Scanner Modules (search portscan))
 
 ![Snapshot-4: Scan configuration (use, set RHOSTS, set PORTS)](image)
 
