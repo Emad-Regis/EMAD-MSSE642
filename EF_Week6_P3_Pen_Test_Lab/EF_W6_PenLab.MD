@@ -14,7 +14,8 @@ The lab environment consists of two virtual machines running in VirtualBox on a 
 *   **Kali Linux** — the attacker machine
 *   **Metasploitable2** — the intentionally vulnerable target machine (IP: 192.168.64.8)
 
-[Snapshot-1] (/https://github.com/Emad-Regis/EMAD-MSSE642/blob/579607c721319eb30f0a1cc522a9578984bd9654/EF_Week6_P3_Pen_Test_Lab/P6_Images/Screenshot%201.png)
+![Snapshot-1](/EF_Week6_P3_Pen_Test_Lab/P6_Images/Screenshot 1.png)
+
 
 Pic.1 (Two VMs running simultaneously in VirtualBox, with a successful ping from Kali Linux to Metasploitable2 (192.168.64.8) confirming network connectivity.
 
