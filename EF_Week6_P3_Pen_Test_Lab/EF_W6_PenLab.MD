@@ -52,7 +52,7 @@ Port scanning was performed using the Metasploit Framework's built-in TCP port s
    run
    ```
 
-![Snapshot_2](/EF_Week6_P3_Pen_Test_Lab/P6_Images/Screenshot2 .png)
+![Snapshot_2](/EF_Week6_P3_Pen_Test_Lab/P6_Images/Screenshot2%.png)
 Pic.2 (Metasploit console running)
 
 ![Snapshot-3: Port Scanner Modules (search portscan)](image)
