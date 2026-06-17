@@ -58,9 +58,11 @@ Pic.2 (Metasploit console running)
 ![Snapshot_3](/EF_Week6_P3_Pen_Test_Lab/P6_Images/Screenshot3.png)
 Pic.3 (Port Scanner Modules (search portscan))
 
-![Snapshot-4: Scan configuration (use, set RHOSTS, set PORTS)](image)
+![Snapshot_4](/EF_Week6_P3_Pen_Test_Lab/P6_Images/Screenshot4.png)
+Pic.4 (Scan configuration (use, set RHOSTS, set PORTS))
 
-![Snapshot-5: Port Scan Results](image)
+![Snapshot_5](/EF_Week6_P3_Pen_Test_Lab/P6_Images/Screenshot5.png)
+Pic.5 (Port Scan Results)
 
 ### Open Ports Identified
 *   **Port 21:** FTP (File Transfer Protocol) — Used for transferring files.
