@@ -1,4 +1,3 @@
-Based on the `HW6.docx` document, I have converted its entire contents into clean, well-formatted Markdown. 
 
 ***
 
