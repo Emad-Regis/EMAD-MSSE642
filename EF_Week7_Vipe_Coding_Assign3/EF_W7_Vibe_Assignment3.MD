@@ -114,6 +114,11 @@ The server concatenates user input directly into SQL: `WHERE product = '` + `inp
 
 Pic.2 (String Attack 01)
 
+
+![snap4](/EF_Week7_Vipe_Coding_Assign3/Images_W7_Vipe_Coding_3/Snap4_Fix1.png)
+
+Pic.3 (Fix String Attack 01)
+
 ---
 
 ### Attack 02 — UNION Extraction String
