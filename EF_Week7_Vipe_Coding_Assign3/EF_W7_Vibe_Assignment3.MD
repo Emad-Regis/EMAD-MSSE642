@@ -150,7 +150,7 @@ Same buttons as Attack 01 [1]. The key difference is what appears on the vulnera
 
 Pic.4 (String Attack 02)
 
-![snap5](
+![snap5](/EF_Week7_Vipe_Coding_Assign3/Images_W7_Vipe_Coding_3/Snap5_Fix2.png)
 
 Pic5 (Fix String Attack 02)
 
