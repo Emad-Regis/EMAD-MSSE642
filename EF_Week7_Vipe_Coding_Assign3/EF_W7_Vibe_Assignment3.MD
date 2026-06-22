@@ -110,6 +110,9 @@ The server concatenates user input directly into SQL: `WHERE product = '` + `inp
 *   **How attackers use this in practice:** Shows how OR injection is quickly escalated to a UNION attack that extracts data from other tables like users or sessions [1].
 *   **Fix:** Parameterized query code in Python, Node.js, and Java [1].
 
+
+
+Pic.2 (String 1 Attack)
 ---
 
 ### Attack 02 — UNION Extraction String
