@@ -167,5 +167,6 @@ Both attack strings are shown side-by-side with four columns — the attack stri
 | **Impact** | Dumps entire table immediately | Extracts credentials silently |
 | **Fix** | Parameterized query | Parameterized query + least-privilege DB role |
 
-
+---
 Note: The App worked smoothly, no issue observed. 
+---
