@@ -64,7 +64,8 @@ I choose to use Replit to develop my A02:2025 educational tool because its cloud
 The Program is an interactive browser-based sandbox that teaches *OWASP A02:2025 — Security Misconfiguration* by showing exactly what happens when two specific attack strings are typed into a search box [1]. Nothing connects to a real database — all SQL, server responses, and query results are simulated so everything is safe to explore [1].
 
 **The core concept:** One search box, two servers [1]. Every time you submit input, it goes to a misconfigured server (red panel) and a properly configured server (green panel) at the same time [1]. You see what each one does differently [1].
-![snap1](/
+![snap1](/EF_Week7_Vipe_Coding_Assign3/Images_W7_Vipe_Coding_3/Snap1_Program.png)
+
 ---
 ### Navigation / The Program
 
