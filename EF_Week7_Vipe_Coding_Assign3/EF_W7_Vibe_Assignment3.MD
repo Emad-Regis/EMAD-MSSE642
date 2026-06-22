@@ -152,7 +152,7 @@ Pic.4 (String Attack 02)
 
 ![snap5](/EF_Week7_Vipe_Coding_Assign3/Images_W7_Vipe_Coding_3/Snap5_Fix2.png)
 
-Pic5 (Fix String Attack 02)
+Pic.5 (Fix String Attack 02)
 
 ---
 
@@ -166,3 +166,6 @@ Both attack strings are shown side-by-side with four columns — the attack stri
 | **Mechanism** | Makes `WHERE` always true | Appends a second `SELECT` to a different table |
 | **Impact** | Dumps entire table immediately | Extracts credentials silently |
 | **Fix** | Parameterized query | Parameterized query + least-privilege DB role |
+
+
+Note: The App worked smoothly, no issue observed. 
