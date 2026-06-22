@@ -66,6 +66,7 @@ The Program is an interactive browser-based sandbox that teaches *OWASP A02:2025
 **The core concept:** One search box, two servers [1]. Every time you submit input, it goes to a misconfigured server (red panel) and a properly configured server (green panel) at the same time [1]. You see what each one does differently [1].
 ![snap1](/EF_Week7_Vipe_Coding_Assign3/Images_W7_Vipe_Coding_3/Snap1_Program.png)
 
+
 Pic.1 (Educational Program)
 ---
 ### Navigation / The Program
