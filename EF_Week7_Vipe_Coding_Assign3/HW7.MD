@@ -2,7 +2,7 @@ Based on the HW7.docx document, I can see that it contains an assignment on OWAS
 
 Here is the complete content of your document converted into clean, standard Markdown (MD) format:
 
-```
+
 # Vibe Coding Assignment #3
 
 **OWASP A05:2025 — SQL Injection**  
@@ -149,4 +149,4 @@ Both attack strings are shown side-by-side with four columns — the attack stri
 | **Mechanism** | Makes `WHERE` always true | Appends a second `SELECT` to a different table |
 | **Impact** | Dumps entire table immediately | Extracts credentials silently |
 | **Fix** | Parameterized query | Parameterized query + least-privilege DB role |
-```
+
