@@ -146,6 +146,14 @@ Same buttons as Attack 01 [1]. The key difference is what appears on the vulnera
 *   **How attackers use this in practice:** Shows how attackers first probe the column count with `ORDER BY`, then construct a precisely matching `UNION` to extract any table [1].
 *   **Fix:** PostgreSQL `CREATE ROLE` and `GRANT` commands for setting up least-privilege roles, one per app feature [1].
 
+![snap3](/EF_Week7_Vipe_Coding_Assign3/Images_W7_Vipe_Coding_3/SnaP3_String2.png)
+
+Pic.4 (String Attack 02)
+
+![snap5](
+
+Pic5 (Fix String Attack 02)
+
 ---
 
 ### Comparison Table
