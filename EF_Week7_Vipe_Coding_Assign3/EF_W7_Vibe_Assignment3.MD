@@ -15,7 +15,7 @@ A02:2025 – Security Misconfiguration represents one of the most critical and w
 
 ---
 
-## Why A02:2025 is Highly Critical
+## Why A02:2025 is Highly Critical ?
 
 Modern software deployment relies heavily on external configurations rather than hardcoded code logic [2]. The primary areas of risk include:
 
