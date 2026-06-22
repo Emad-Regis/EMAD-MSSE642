@@ -2,7 +2,7 @@ Based on the HW7.docx document, I can see that it contains an assignment on OWAS
 
 Here is the complete content of your document converted into clean, standard Markdown (MD) format:
 
-```markdown
+```
 # Vibe Coding Assignment #3
 
 **OWASP A05:2025 — SQL Injection**  
