@@ -103,10 +103,10 @@ Claude Code was prompted conversationally to build the application incrementally
 | ![Trails Page](/Assignment/images/Projects/Project_4/02.Explore_Trails.png) | Trail listings with difficulty badges |
 | ![Login Page](/Assignment/images/Projects/Project_4/03.JWT_log_in.png) | JWT login form |
 | ![Admin Dashboard](/Assignment/images/Projects/Project_4/04.Admin.png) | Protected admin dashboard (authenticated) |
-| ![Events Page](images/p4-05-events.png) | Upcoming events listing |
-| ![Members Page](images/p4-06-members.png) | Club member directory |
-| ![Noticeboard](images/p4-07-noticeboard.png) | Club announcements / noticeboard |
-| ![Trail Detail](images/p4-08-trail-detail.png) | Individual trail detail page |
+| ![Events Page](/Assignment/images/Projects/Project_4/05.Upcoming_Event.png) | Upcoming events listing |
+| ![Members Page](/Assignment/images/Projects/Project_4/06.Club_Directory.png) | Club member directory |
+| ![Noticeboard](/Assignment/images/Projects/Project_4/07.Club_notes.png) | Club announcements / noticeboard |
+| ![Trail Detail](/Assignment/images/Projects/Project_4/08.Indiviual_trail.png) | Individual trail detail page |
 
 ---
 
