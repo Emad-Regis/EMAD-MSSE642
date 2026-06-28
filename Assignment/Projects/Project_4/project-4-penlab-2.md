@@ -99,10 +99,10 @@ Claude Code was prompted conversationally to build the application incrementally
 
 | Screenshot | Description |
 |-----------|-------------|
-| ![Home Page](images/p4-01-app-home.png) | Hiking Club home page |
-| ![Trails Page](images/p4-02-trails.png) | Trail listings with difficulty badges |
-| ![Login Page](images/p4-03-login.png) | JWT login form |
-| ![Admin Dashboard](images/p4-04-admin.png) | Protected admin dashboard (authenticated) |
+| ![Home Page](/Assignment/images/Projects/Project_4/01.Hiking_Club_H_Page.png) | Hiking Club home page |
+| ![Trails Page](/Assignment/images/Projects/Project_4/02.Explore_Trails.png) | Trail listings with difficulty badges |
+| ![Login Page](/Assignment/images/Projects/Project_4/03.JWT_log_in.png) | JWT login form |
+| ![Admin Dashboard](/Assignment/images/Projects/Project_4/04.Admin.png) | Protected admin dashboard (authenticated) |
 | ![Events Page](images/p4-05-events.png) | Upcoming events listing |
 | ![Members Page](images/p4-06-members.png) | Club member directory |
 | ![Noticeboard](images/p4-07-noticeboard.png) | Club announcements / noticeboard |
