@@ -282,7 +282,7 @@ The following vulnerability classes were tested and no exploitable issues were d
 | Screenshot | Description |
 |-----------|-------------|
 | ![ZAP Spider Running](/Assignment/images/Projects/Project_4/p4-10-zap1-spider.png) | ZAP spider crawling the Hiking Club application |
-| ![ZAP Active Scan](Assignment/images/Projects/Project_4/p4-11-zap2-active-scan.png) | ZAP active scanner in progress |
+| ![ZAP Active Scan](/Assignment/images/Projects/Project_4/p4-11-zap2-active-scan.png) | ZAP active scanner in progress |
 | ![ZAP Alerts](/Assignment/images/Projects/Project_4/p4-12-zap3-alerts.png) | ZAP alerts panel showing findings by risk level |
 | ![ZAP CSP Alert Detail](/Assignment/images/Projects/Project_4/p4-13-zap4-csp-detail.png) | Detail view of the missing CSP header alert |
 | ![ZAP HTML Report](/Assignment/images/Projects/Project_4/p4-14-zap5-report.png) | ZAP generated HTML summary report |
