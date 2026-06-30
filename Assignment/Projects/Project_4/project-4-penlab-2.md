@@ -204,9 +204,9 @@ The application is then accessible at `http://<kali-vm-ip>:5000` from the host m
 | Screenshot | Description |
 |-----------|-------------|
 | ![Kali Node Install](/Assignment/images/Projects/Project_4/p4-06-kali1-node-install.png) | Node.js 22 installed on Kali VM |
-| ![Docker PostgreSQL Running](images/p4-07-docker-postgres.png) | PostgreSQL container running in Docker |
-| ![App Running on Kali](images/p4-08-app-on-kali.png) | Hiking Club app running at localhost:5000 on Kali VM |
-| ![Seed Success](images/p4-09-seed-success.png) | Database seeded with trails, events, members, and admin user |
+| ![Docker PostgreSQL Running](/Assignment/images/Projects/Project_4/p4-07-docker2-postgres.png) | PostgreSQL container running in Docker |
+| ![App Running on Kali](/Assignment/images/Projects/Project_4/p4-08-app3-on-kali.png) | Hiking Club app running at localhost:5000 on Kali VM |
+| ![Seed Success](/Assignment/images/Projects/Project_4/p4-09-seed4-success.png) | Database seeded with trails, events, members, and admin user |
 
 ---
 
